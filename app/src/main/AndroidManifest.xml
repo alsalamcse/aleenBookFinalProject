@@ -16,6 +16,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".spalshActivity" />
+        <activity android:name=".logInActivity" />
+        <activity android:name=".signUpActivity"></activity>
     </application>
 
 </manifest>
