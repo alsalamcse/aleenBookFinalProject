@@ -19,6 +19,10 @@ import android.view.ViewGroup;
 
 import android.widget.TextView;
 
+import com.nassra.aleen.aleenbookfinalproject.bookFragment.NewBookFragment;
+import com.nassra.aleen.aleenbookfinalproject.bookFragment.ProfileFragment;
+import com.nassra.aleen.aleenbookfinalproject.bookFragment.ReadBookFragment;
+
 public class MainTabsActivity extends AppCompatActivity {
 
     /**
@@ -130,23 +134,53 @@ public class MainTabsActivity extends AppCompatActivity {
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
+        ProfileFragment profileFragment;
+        NewBookFragment newBookFragment;
+        ReadBookFragment readBookFragment;
 
 
         public SectionsPagerAdapter(FragmentManager fm) {
             super(fm);
+
         }
 
         @Override
         public Fragment getItem(int position) {
             // getItem is called to instantiate the fragment for the given page.
             // Return a PlaceholderFragment (defined as a static inner class below).
+            if(position==0){
+                if (profileFragment==null)
+                    profileFragment=new ProfileFragment();
+                return profileFragment;
+            }
+            if(position==1){
+                if (newBookFragment==null)
+                    newBookFragment=new NewBookFragment();
+                return newBookFragment;
+            }
+            if(position==3){
+                if (readBookFragment==null)
+                   readBookFragment=new ReadBookFragment();
+                return readBookFragment;
+            }
             return PlaceholderFragment.newInstance(position + 1);
+
         }
 
         @Override
         public int getCount() {
             // Show 3 total pages.
             return 3;
+        }
+        @Override
+        public CharSequence getPageTitle(int position) {
+            if(position==0)
+                return "profile";
+            if(position==1)
+                return "new";
+            if(position==3)
+                return "read";
+            return "noname";
         }
     }
 }
