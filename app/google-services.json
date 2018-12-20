@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "589748166262",
+    "firebase_url": "https://aleenbookfinalproject.firebaseio.com",
+    "project_id": "aleenbookfinalproject",
+    "storage_bucket": "aleenbookfinalproject.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:589748166262:android:0e87eff975e0cd25",
+        "android_client_info": {
+          "package_name": "com.nassra.aleen.aleenbookfinalproject"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "589748166262-benovekbf2iea872b05gt2t38vdp994q.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.nassra.aleen.aleenbookfinalproject",
+            "certificate_hash": "013f43c9a5d380c46de43c04644418dbe5d2a253"
+          }
+        },
+        {
+          "client_id": "589748166262-a1p17nhu7em71nb3d9ud7mlmihp37uku.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB36CFOx5t3fsQ6KXoGqy8VHyM-ZFaDbAU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "589748166262-a1p17nhu7em71nb3d9ud7mlmihp37uku.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
