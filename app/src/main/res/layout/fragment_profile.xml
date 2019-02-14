@@ -27,34 +27,41 @@
             android:src="@mipmap/ic_launcher" />
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/etName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="name"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/etFamily"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="family"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/etPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:hint="phone"
             android:inputType="phone" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/etAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="age"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="book i read" />
     </LinearLayout>
 </FrameLayout>

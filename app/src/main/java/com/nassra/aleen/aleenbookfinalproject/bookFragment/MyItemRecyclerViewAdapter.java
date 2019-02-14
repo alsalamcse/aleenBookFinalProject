@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 
+import com.nassra.aleen.aleenbookfinalproject.R;
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.ReadBookFragment.OnListFragmentInteractionListener;
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.dummy.DummyContent.DummyItem;
 

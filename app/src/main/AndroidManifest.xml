@@ -24,6 +24,9 @@
             android:label="@string/title_activity_main_tabs"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".bookFragment.profileActivity" />
+        <activity android:name=".bookListActivity" />
+        <activity android:name=".bookInfoActivity" />
+        <activity android:name=".addBookActivity"></activity>
     </application>
 
 </manifest>
