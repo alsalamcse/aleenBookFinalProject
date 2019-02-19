@@ -12,49 +12,49 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/editText2"
+            android:id="@+id/etBookName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="book name"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText3"
+            android:id="@+id/etWriter1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="writer"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText4"
+            android:id="@+id/etYear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="year"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText5"
+            android:id="@+id/etThem1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="them"
+            android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/editText6"
+            android:id="@+id/etRecom1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
-            android:inputType="textPersonName"
-            android:text="Name" />
+            android:hint="recommandition"
+            android:inputType="textPersonName" />
 
         <Button
-            android:id="@+id/button2"
+            android:id="@+id/btnAdd"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Button" />
+            android:text="add" />
     </LinearLayout>
 </android.support.constraint.ConstraintLayout>

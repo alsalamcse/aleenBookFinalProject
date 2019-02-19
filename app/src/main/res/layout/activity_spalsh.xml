@@ -8,10 +8,11 @@
 
     <TextView
         android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="350dp"
+        android:layout_height="321dp"
         android:text="with Books we can change a nation"
         android:textColor="@android:color/holo_red_light"
-        tools:layout_editor_absoluteX="73dp"
-        tools:layout_editor_absoluteY="186dp" />
+        android:textSize="30sp"
+        tools:layout_editor_absoluteX="22dp"
+        tools:layout_editor_absoluteY="133dp" />
 </android.support.constraint.ConstraintLayout>
