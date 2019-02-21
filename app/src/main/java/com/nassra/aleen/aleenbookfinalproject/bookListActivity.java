@@ -1,6 +1,7 @@
 package com.nassra.aleen.aleenbookfinalproject;
 
 import android.content.Intent;
+import android.support.design.widget.FloatingActionButton;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -11,7 +12,7 @@ import com.nassra.aleen.aleenbookfinalproject.bookFragment.ProfileFragment;
 
 public class bookListActivity extends AppCompatActivity {
     private ListView lvBook;
-    private Button btnAdd;
+    private FloatingActionButton btnAdd;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
