@@ -9,10 +9,12 @@ import android.widget.Button;
 import android.widget.ListView;
 
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.ProfileFragment;
+import com.nassra.aleen.aleenbookfinalproject.data.BookAdapter;
 
 public class bookListActivity extends AppCompatActivity {
     private ListView lvBook;
     private FloatingActionButton btnAdd;
+    private BookAdapter  bookAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -20,6 +22,7 @@ public class bookListActivity extends AppCompatActivity {
         setContentView(R.layout.activity_book_list);
         lvBook=findViewById(R.id.lvBook);
         btnAdd=findViewById(R.id.btnAdd);
+
         btnAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
