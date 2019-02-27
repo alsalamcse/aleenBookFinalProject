@@ -85,7 +85,7 @@ public class signUpActivity extends AppCompatActivity {
                 if (task.isSuccessful()){
                     Toast.makeText(signUpActivity.this, "AUTHENTICTION SUCCESSFUL", Toast.LENGTH_SHORT).show();
                     profilrHadler();
-                    finish();
+                    //
                 }
                 else {
                     Toast.makeText(signUpActivity.this, "Authentication failed"+task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -128,13 +128,14 @@ public class signUpActivity extends AppCompatActivity {
 
             DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
 
-            String key=reference.child("MyTask").push().getKey();
+            String key=reference.child("MyProfile").push().getKey();
             profile.setKey(key);
-            reference.child("MyTasks").child(key).setValue(profile).addOnCompleteListener(new OnCompleteListener<Void>() {
+            reference.child("Myprofile").child(key).setValue(profile).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task1) {
                     if (task1.isSuccessful()){
                         Toast.makeText(signUpActivity.this, "add successed", Toast.LENGTH_SHORT).show();
+                        finish();
                     }
                     else{
                         Toast.makeText(signUpActivity.this, "add failed"+task1.getException().getMessage(), Toast.LENGTH_SHORT).show();

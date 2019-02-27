@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
 
 import com.nassra.aleen.aleenbookfinalproject.MainTabsActivity;
@@ -31,7 +32,7 @@ public class BookAdapter extends ArrayAdapter<MyBook> {
         TextView tvItmName=convertView.findViewById(R.id.tvItmName);
         TextView tvItmWriter=convertView.findViewById(R.id.tvItmWriter);
         TextView tvItmYear=convertView.findViewById(R.id.tvItmYear);
-        Button btnInfo =convertView.findViewById(R.id.btnInfo);
+        ImageButton btnInfo =convertView.findViewById(R.id.btnInfo);
         //put the data of the object on the view
         tvItmName.setText(m.getName());
         tvItmWriter.setText(m.getWriter());
