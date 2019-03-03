@@ -129,8 +129,10 @@ public class signUpActivity extends AppCompatActivity {
             DatabaseReference reference= FirebaseDatabase.getInstance().getReference();
 
             String key=reference.child("MyProfile").push().getKey();
-            profile.setKey(key);
-            reference.child("Myprofile").child(key).setValue(profile).addOnCompleteListener(new OnCompleteListener<Void>() {
+            String email=etEmail2.getText().toString();
+
+            profile.setKey(email);
+            reference.child("Myprofile").child(email).setValue(profile).addOnCompleteListener(new OnCompleteListener<Void>() {
                 @Override
                 public void onComplete(@NonNull Task<Void> task1) {
                     if (task1.isSuccessful()){
