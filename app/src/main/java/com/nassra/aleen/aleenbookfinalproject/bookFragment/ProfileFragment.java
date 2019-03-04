@@ -61,7 +61,7 @@ public class ProfileFragment extends Fragment {
             }
         });
 
-
+getProfile();
 
         // Inflate the layout for this fragment
         return view;
@@ -71,7 +71,7 @@ public class ProfileFragment extends Fragment {
     private void getProfile(){
         DatabaseReference reference=FirebaseDatabase.getInstance().getReference();
         String email = FirebaseAuth.getInstance().getCurrentUser().getEmail();
-        reference.child("Myprofile").child(email).addValueEventListener(new ValueEventListener() {
+        reference.child("Myprofile").child(email.replace('.','*')).addValueEventListener(new ValueEventListener() {
 
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
