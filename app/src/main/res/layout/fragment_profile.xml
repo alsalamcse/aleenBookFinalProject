@@ -31,6 +31,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
+            android:enabled="true"
             android:hint="name"
             android:inputType="textPersonName" />
 
@@ -38,7 +39,9 @@
             android:id="@+id/etFamily"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:editable="true"
             android:ems="10"
+            android:enabled="true"
             android:hint="family"
             android:inputType="textPersonName" />
 
@@ -46,7 +49,9 @@
             android:id="@+id/etPhone"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:editable="true"
             android:ems="10"
+            android:enabled="true"
             android:hint="phone"
             android:inputType="phone" />
 
@@ -54,7 +59,9 @@
             android:id="@+id/etAge"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:editable="true"
             android:ems="10"
+            android:enabled="true"
             android:hint="age"
             android:inputType="textPersonName" />
 

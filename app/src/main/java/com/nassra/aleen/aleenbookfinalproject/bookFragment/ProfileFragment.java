@@ -76,8 +76,9 @@ getProfile();
             @Override
             public void onDataChange(DataSnapshot dataSnapshot) {
 
-                DataSnapshot d=dataSnapshot.getChildren().iterator().next();
-                MyProfile p=d.getValue(MyProfile.class);
+
+               // DataSnapshot d=dataSnapshot.getChildren().iterator().next();
+                 MyProfile p=dataSnapshot.getValue(MyProfile.class);
                 etName.setText(p.getName());
                 etFamily.setText(p.getFamily());
                 etPhone.setText(p.getPhone());
