@@ -1,6 +1,7 @@
 package com.nassra.aleen.aleenbookfinalproject.data;
 
 public class MyBook {
+    public int content;
     private String key;
     private String name;
     private String writer;

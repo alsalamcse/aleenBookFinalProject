@@ -1,6 +1,7 @@
 package com.nassra.aleen.aleenbookfinalproject.bookFragment;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v7.widget.GridLayoutManager;
@@ -11,10 +12,8 @@ import android.view.View;
 import android.view.ViewGroup;
 
 import com.nassra.aleen.aleenbookfinalproject.R;
-import com.nassra.aleen.aleenbookfinalproject.bookFragment.dummy.DummyContent;
-import com.nassra.aleen.aleenbookfinalproject.bookFragment.dummy.DummyContent.DummyItem;
-
-import java.util.List;
+import com.nassra.aleen.aleenbookfinalproject.bookFragment.dummy.bookContent;
+import com.nassra.aleen.aleenbookfinalproject.data.MyBook;
 
 /**
  * A fragment representing a list of Items.
@@ -29,6 +28,10 @@ public class ReadBookFragment extends Fragment {
     // TODO: Customize parameters
     private int mColumnCount = 1;
     private OnListFragmentInteractionListener mListener;
+    private String writer;
+    private String year;
+    private String them;
+    private String recomm;
 
     /**
      * Mandatory empty constructor for the fragment manager to instantiate the
@@ -59,6 +62,17 @@ public class ReadBookFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
+        Intent intent=getActivity().getIntent();
+        if(intent!=null){
+            intent.putExtra("wr",writer);
+            intent.putExtra("ye",year);
+            intent.putExtra("th",them);
+            intent.putExtra("re",recomm);
+            writer=intent.getStringExtra("wr");
+            year=intent.getStringExtra("yr");
+            them=intent.getStringExtra("th");
+            recomm=intent.getStringExtra("re");
+        }
         View view = inflater.inflate(R.layout.fragment_item_list, container, false);
 
         // Set the adapter
@@ -70,7 +84,7 @@ public class ReadBookFragment extends Fragment {
             } else {
                 recyclerView.setLayoutManager(new GridLayoutManager(context, mColumnCount));
             }
-            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(DummyContent.ITEMS, mListener));
+            recyclerView.setAdapter(new MyItemRecyclerViewAdapter(bookContent.ITEMS, mListener));
         }
         return view;
     }
@@ -105,6 +119,6 @@ public class ReadBookFragment extends Fragment {
      */
     public interface OnListFragmentInteractionListener {
         // TODO: Update argument type and name
-        void onListFragmentInteraction(DummyItem item);
+        void onListFragmentInteraction(MyBook item);
     }
 }

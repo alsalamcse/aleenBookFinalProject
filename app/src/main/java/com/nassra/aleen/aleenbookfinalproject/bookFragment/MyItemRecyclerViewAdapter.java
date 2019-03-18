@@ -8,7 +8,8 @@ import android.widget.TextView;
 
 import com.nassra.aleen.aleenbookfinalproject.R;
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.ReadBookFragment.OnListFragmentInteractionListener;
-import com.nassra.aleen.aleenbookfinalproject.bookFragment.dummy.DummyContent.DummyItem;
+import com.nassra.aleen.aleenbookfinalproject.bookFragment.dummy.bookContent.DummyItem;
+import com.nassra.aleen.aleenbookfinalproject.data.MyBook;
 
 import java.util.List;
 
@@ -19,10 +20,10 @@ import java.util.List;
  */
 public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecyclerViewAdapter.ViewHolder> {
 
-    private final List<DummyItem> mValues;
+    private final List<MyBook> mValues;
     private final OnListFragmentInteractionListener mListener;
 
-    public MyItemRecyclerViewAdapter(List<DummyItem> items, OnListFragmentInteractionListener listener) {
+    public MyItemRecyclerViewAdapter(List<MyBook> items, OnListFragmentInteractionListener listener) {
         mValues = items;
         mListener = listener;
     }
@@ -37,7 +38,7 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
     @Override
     public void onBindViewHolder(final ViewHolder holder, int position) {
         holder.mItem = mValues.get(position);
-        holder.mIdView.setText(mValues.get(position).id);
+        holder.mIdView.setText(mValues.get(position).getName());
         holder.mContentView.setText(mValues.get(position).content);
 
         holder.mView.setOnClickListener(new View.OnClickListener() {
@@ -61,7 +62,7 @@ public class MyItemRecyclerViewAdapter extends RecyclerView.Adapter<MyItemRecycl
         public final View mView;
         public final TextView mIdView;
         public final TextView mContentView;
-        public DummyItem mItem;
+        public MyBook mItem;
 
         public ViewHolder(View view) {
             super(view);

@@ -53,14 +53,14 @@ public class NewBookFragment extends Fragment {
         btnLook.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                newBookData();
+                sarchBookData();
             }
         });
 
         return view;
     }
 
-    private void newBookData() {
+    private void sarchBookData() {
         boolean isok=true;
         String writer=etWriter.getText().toString();
         String year=etYear.getText().toString();
@@ -76,6 +76,10 @@ public class NewBookFragment extends Fragment {
         }
         if (isok){
             Intent intent=new Intent(getContext(),ReadBookFragment.class);
+            intent.putExtra("wr",writer);
+            intent.putExtra("ye",year);
+            intent.putExtra("th",them);
+            intent.putExtra("re",recomm);
             startActivity(intent);
 
         }

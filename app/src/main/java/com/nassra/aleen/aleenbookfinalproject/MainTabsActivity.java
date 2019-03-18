@@ -20,6 +20,7 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.NewBookFragment;
+import com.nassra.aleen.aleenbookfinalproject.bookFragment.NewFragment;
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.ProfileFragment;
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.ReadBookFragment;
 
@@ -135,7 +136,7 @@ public class MainTabsActivity extends AppCompatActivity {
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
         ProfileFragment profileFragment;
-        NewBookFragment newBookFragment;
+        NewFragment newFragment;
         ReadBookFragment readBookFragment;
 
 
@@ -154,9 +155,9 @@ public class MainTabsActivity extends AppCompatActivity {
                 return profileFragment;
             }
             if(position==1){
-                if (newBookFragment==null)
-                    newBookFragment=new NewBookFragment();
-                return newBookFragment;
+                if (newFragment==null)
+                    newFragment=new NewFragment();
+                return newFragment;
             }
             if(position==3){
                 if (readBookFragment==null)
