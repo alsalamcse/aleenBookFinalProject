@@ -1,6 +1,8 @@
 package com.nassra.aleen.aleenbookfinalproject.data;
 
-public class MyBook {
+import java.io.Serializable;
+
+public class MyBook implements Serializable {
     public int content;
     private String key;
     private String name;

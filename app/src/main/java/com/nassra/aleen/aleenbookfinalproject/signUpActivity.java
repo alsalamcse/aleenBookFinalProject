@@ -21,7 +21,7 @@ import com.nassra.aleen.aleenbookfinalproject.data.MyProfile;
 import java.util.Date;
 
 
-public class signUpActivity extends AppCompatActivity {
+public class  signUpActivity extends AppCompatActivity {
     private EditText etFirstName,etLastName,etPhone,etAge,etEmail2,etPassword2;
     private Button btnSave;
     private FirebaseUser user;

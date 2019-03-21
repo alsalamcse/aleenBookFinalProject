@@ -14,7 +14,7 @@
         tools:layout_editor_absoluteY="8dp">
 
         <EditText
-            android:id="@+id/etBookName"
+            android:id="@+id/etBookName1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -22,7 +22,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/etWriter"
+            android:id="@+id/etWriter1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -30,7 +30,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/etYear"
+            android:id="@+id/etYear1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -38,7 +38,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/etThem"
+            android:id="@+id/etThem1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"
@@ -46,7 +46,7 @@
             android:inputType="textPersonName" />
 
         <EditText
-            android:id="@+id/etRecom"
+            android:id="@+id/etRecom1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:ems="10"

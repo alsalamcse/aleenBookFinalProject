@@ -27,7 +27,7 @@ public class BookAdapter extends ArrayAdapter<MyBook> {
             convertView=LayoutInflater.from(getContext())
                     .inflate(R.layout.book,parent,false);
         //to get current data object
-        MyBook m=getItem(position);//return data object number "position"
+        final MyBook m=getItem(position);//return data object number "position"
         //get referances for eact item at the xml ui
         TextView tvItmName=convertView.findViewById(R.id.tvItmName);
         TextView tvItmWriter=convertView.findViewById(R.id.tvItmWriter);
@@ -41,6 +41,7 @@ public class BookAdapter extends ArrayAdapter<MyBook> {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(),bookInfoActivity.class);
+                intent.putExtra("book",m);
                 getContext().startActivity(intent);
             }
         });
