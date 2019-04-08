@@ -17,6 +17,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.nassra.aleen.aleenbookfinalproject.MainTabsActivity;
 import com.nassra.aleen.aleenbookfinalproject.R;
 import com.nassra.aleen.aleenbookfinalproject.bookListActivity;
 import com.nassra.aleen.aleenbookfinalproject.data.MyBook;
@@ -75,12 +76,18 @@ public class NewBookFragment extends Fragment {
             isok=false;
         }
         if (isok){
-            Intent intent=new Intent(getContext(),ReadBookFragment.class);
-            intent.putExtra("wr",writer);
-            intent.putExtra("ye",year);
-            intent.putExtra("th",them);
-            intent.putExtra("re",recomm);
-            startActivity(intent);
+           MainTabsActivity mainTabsActivity= (MainTabsActivity) getActivity();
+           mainTabsActivity.setWriter(writer);
+           mainTabsActivity.setYear(year);
+           mainTabsActivity.setThem(them);
+           mainTabsActivity.setRecomm(recomm);
+           mainTabsActivity.getmViewPager().setCurrentItem(2);
+           //            Intent intent=new Intent(getContext(),ReadBookFragment.class);
+//            intent.putExtra("wr",writer);
+//            intent.putExtra("ye",year);
+//            intent.putExtra("th",them);
+//            intent.putExtra("re",recomm);
+//            startActivity(intent);
 
         }
 

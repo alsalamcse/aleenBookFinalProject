@@ -25,6 +25,39 @@ import com.nassra.aleen.aleenbookfinalproject.bookFragment.ProfileFragment;
 import com.nassra.aleen.aleenbookfinalproject.bookFragment.ReadBookFragment;
 
 public class MainTabsActivity extends AppCompatActivity {
+    private String writer,year,them,recomm;
+
+    public String getWriter() {
+        return writer;
+    }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
+
+    public String getThem() {
+        return them;
+    }
+
+    public void setThem(String them) {
+        this.them = them;
+    }
+
+    public String getRecomm() {
+        return recomm;
+    }
+
+    public void setRecomm(String recomm) {
+        this.recomm = recomm;
+    }
 
     /**
      * The {@link android.support.v4.view.PagerAdapter} that will provide
@@ -35,6 +68,10 @@ public class MainTabsActivity extends AppCompatActivity {
      * {@link android.support.v4.app.FragmentStatePagerAdapter}.
      */
     private SectionsPagerAdapter mSectionsPagerAdapter;
+
+    public ViewPager getmViewPager() {
+        return mViewPager;
+    }
 
     /**
      * The {@link ViewPager} that will host the section contents.

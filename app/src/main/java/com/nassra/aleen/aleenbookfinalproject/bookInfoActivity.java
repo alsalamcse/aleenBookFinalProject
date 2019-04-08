@@ -4,6 +4,7 @@ import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.firebase.auth.FirebaseAuth;
@@ -16,7 +17,7 @@ import com.nassra.aleen.aleenbookfinalproject.data.MyBook;
 import com.nassra.aleen.aleenbookfinalproject.data.MyProfile;
 
 public class bookInfoActivity extends AppCompatActivity {
-    private EditText etBookName1, etWriter1, etYear1, etThem1, etRecom1;
+    private TextView etBookName1, etWriter1, etYear1, etThem1, etRecom1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +33,7 @@ public class bookInfoActivity extends AppCompatActivity {
             MyBook b= (MyBook) i.getExtras().get("book");
             etBookName1.setText(b.getName());
             etWriter1.setText(b.getWriter());
+            etYear1.setText(b.getYear());
             etThem1.setText(b.getThem());
             etRecom1.setText(b.getRecomm());
         }

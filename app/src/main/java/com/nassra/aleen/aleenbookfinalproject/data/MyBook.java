@@ -61,7 +61,7 @@ public class MyBook implements Serializable {
     }
 
     public void setRecomm(String recomm) {
-        this.them = them;
+        this.recomm = recomm;
     }
 
 

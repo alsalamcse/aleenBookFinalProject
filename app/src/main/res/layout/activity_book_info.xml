@@ -13,44 +13,35 @@
         tools:layout_editor_absoluteX="8dp"
         tools:layout_editor_absoluteY="8dp">
 
-        <EditText
+        <TextView
             android:id="@+id/etBookName1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="book name"
-            android:inputType="textPersonName" />
+            android:layout_height="48dp"
+            android:text="book name" />
 
-        <EditText
+        <TextView
             android:id="@+id/etWriter1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="writer"
-            android:inputType="textPersonName" />
+            android:layout_height="57dp"
+            android:text="writer" />
 
-        <EditText
+        <TextView
             android:id="@+id/etYear1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="yaer"
-            android:inputType="textPersonName" />
+            android:layout_height="48dp"
+            android:text="year" />
 
-        <EditText
+        <TextView
             android:id="@+id/etThem1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="them"
-            android:inputType="textPersonName" />
+            android:layout_height="56dp"
+            android:text="them" />
 
-        <EditText
+        <TextView
             android:id="@+id/etRecom1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:hint="recommandition"
-            android:inputType="textPersonName" />
+            android:layout_height="55dp"
+            android:text="recomanidition" />
+
     </LinearLayout>
 </LinearLayout>
