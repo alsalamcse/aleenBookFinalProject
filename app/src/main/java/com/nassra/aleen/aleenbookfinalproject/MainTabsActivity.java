@@ -26,6 +26,9 @@ import com.nassra.aleen.aleenbookfinalproject.bookFragment.ReadBookFragment;
 
 public class MainTabsActivity extends AppCompatActivity {
     private String writer,year,them,recomm;
+    ProfileFragment profileFragment;
+    NewBookFragment newBookFragment;
+    NewFragment newFragment;
 
     public String getWriter() {
         return writer;
@@ -57,6 +60,18 @@ public class MainTabsActivity extends AppCompatActivity {
 
     public void setRecomm(String recomm) {
         this.recomm = recomm;
+    }
+
+    public ProfileFragment getProfileFragment() {
+        return profileFragment;
+    }
+
+    public NewBookFragment getNewBookFragment() {
+        return newBookFragment;
+    }
+
+    public NewFragment getNewFragment() {
+        return newFragment;
     }
 
     /**
@@ -172,9 +187,7 @@ public class MainTabsActivity extends AppCompatActivity {
      * one of the sections/tabs/pages.
      */
     public class SectionsPagerAdapter extends FragmentPagerAdapter {
-        ProfileFragment profileFragment;
-        NewBookFragment newBookFragment;
-        NewFragment newFragment;
+
 
 
         public SectionsPagerAdapter(FragmentManager fm) {

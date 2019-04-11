@@ -7,11 +7,13 @@
 
     <CheckBox
         android:id="@+id/cbName"
-        android:layout_width="224dp"
+        android:layout_width="0dp"
         android:layout_height="43dp"
         android:layout_marginStart="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginEnd="19dp"
         android:text="name"
+        app:layout_constraintEnd_toStartOf="@+id/tvYear4"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -19,17 +21,21 @@
         android:id="@+id/tvWriter4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
         android:text="textView"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="57dp"
+        app:layout_constraintStart_toStartOf="@+id/cbName"
+        app:layout_constraintTop_toTopOf="@+id/cbName"
         tools:ignore="MissingConstraints" />
 
     <TextView
         android:id="@+id/tvYear4"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="67dp"
         android:text="TextView"
-        tools:layout_editor_absoluteX="259dp"
-        tools:layout_editor_absoluteY="57dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/cbName"
+        app:layout_constraintTop_toTopOf="@+id/cbName"
         tools:ignore="MissingConstraints" />
 </android.support.constraint.ConstraintLayout>

@@ -82,7 +82,9 @@ public class NewBookFragment extends Fragment {
            mainTabsActivity.setThem(them);
            mainTabsActivity.setRecomm(recomm);
            mainTabsActivity.getmViewPager().setCurrentItem(2);
-           //            Intent intent=new Intent(getContext(),ReadBookFragment.class);
+            mainTabsActivity.getNewFragment().getAllbook();
+
+            //            Intent intent=new Intent(getContext(),ReadBookFragment.class);
 //            intent.putExtra("wr",writer);
 //            intent.putExtra("ye",year);
 //            intent.putExtra("th",them);

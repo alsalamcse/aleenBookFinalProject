@@ -37,11 +37,7 @@ public class NewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
-        MainTabsActivity mainTabsActivity= (MainTabsActivity) getActivity();
-       writer= mainTabsActivity.getWriter();
-       year= mainTabsActivity.getYear();
-       them= mainTabsActivity.getThem();
-       recomm= mainTabsActivity.getRecomm();
+
         View view = inflater.inflate(R.layout.fragment_new, container, false);
         lstvBooks = view.findViewById(R.id.lstvBooks);
         newBookAdaptor = new NewBookAdaptor(getContext(), R.layout.new_book);
@@ -54,7 +50,13 @@ public class NewFragment extends Fragment {
 
 
 
-    private void getAllbook() {
+    public void getAllbook() {
+        MainTabsActivity mainTabsActivity= (MainTabsActivity) getActivity();
+
+        writer= mainTabsActivity.getWriter();
+        year= mainTabsActivity.getYear();
+        them= mainTabsActivity.getThem();
+        recomm= mainTabsActivity.getRecomm();
         DatabaseReference reference = FirebaseDatabase.getInstance().getReference();
         reference.child("MyBook").addValueEventListener(new ValueEventListener() {
 
