@@ -22,6 +22,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 import com.nassra.aleen.aleenbookfinalproject.R;
 import com.nassra.aleen.aleenbookfinalproject.bookListActivity;
+import com.nassra.aleen.aleenbookfinalproject.choosenActivity;
 import com.nassra.aleen.aleenbookfinalproject.data.MyBook;
 import com.nassra.aleen.aleenbookfinalproject.data.MyProfile;
 
@@ -32,7 +33,7 @@ public class ProfileFragment extends Fragment {
     private TextView tvProfile;
     private ImageView imPic;
     private EditText etName,etFamily,etPhone,etAge;
-    private Button btnList;
+    private Button btnList,btnChoosen;
 
 
     public ProfileFragment() {
@@ -53,11 +54,19 @@ public class ProfileFragment extends Fragment {
         etPhone=view.findViewById(R.id.etPhone);
         etAge=view.findViewById(R.id.etAge);
         btnList=view.findViewById(R.id.btnList);
+        btnChoosen=view.findViewById(R.id.btnChoosen);
         btnList.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(getActivity(),bookListActivity.class);
                 startActivity(i);
+            }
+        });
+        btnChoosen.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(),choosenActivity.class);
+                startActivity(intent);
             }
         });
 

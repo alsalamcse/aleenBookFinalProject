@@ -70,5 +70,11 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="book i read" />
+
+        <Button
+            android:id="@+id/btnChoosen"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="choosen book" />
     </LinearLayout>
 </FrameLayout>
